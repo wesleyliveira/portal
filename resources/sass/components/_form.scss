@@ -1,0 +1,15 @@
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.082);
+    color: $preto ;
+    font-size: 1.1rem; /* Fonte um pouco maior */
+    font-family: 'Poppins', sans-serif; /* Aplica a fonte Poppins */
+  }

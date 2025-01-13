@@ -1,0 +1,17 @@
+// resources/sass/app.scss
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+// Estilos base
+@import 'base/_variables';
+
+// Estilos dos componentes
+@import 'layout/_header';
+@import 'components/_form';
+@import 'pages/_login.scss'; // Importa os estilos específicos do login
+
+
+// Layouts e páginas
+@import 'layout/_header';
+@import 'layout/_footer';
+@import 'pages/_login';
