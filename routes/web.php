@@ -6,11 +6,12 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-
-Route::get('/', [LoginController::class, 'showLoginForm'])->name('login'); // Rota para o formulário de login
+Route::get('/', function () {
+    return Inertia::render('Login');
+})->name('login');
 
 // Rota POST para login
-Route::post('/login', [LoginController::class, 'login'])->name('login.post');
+Route::post('/login', [LoginController::class, 'store'])->name('login.post');
 
 // Rota para dashboard, protegida por autenticação Sanctum
 Route::middleware(['auth:sanctum'])->get('/dashboard', function () {

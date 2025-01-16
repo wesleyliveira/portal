@@ -15,3 +15,9 @@
 @import 'layout/_header';
 @import 'layout/_footer';
 @import 'pages/_login';
+
+// Importando o CSS do Bootstrap
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Importando o JavaScript do Bootstrap (inclui Popper.js)
+@import 'bootstrap';
