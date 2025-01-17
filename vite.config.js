@@ -7,6 +7,7 @@ export default defineConfig({
     resolve: {
         alias: {
             '@images': path.resolve(__dirname, 'public/image'),
+            '@sass': path.resolve(__dirname, 'resources/sass'),
         },
     },
     plugins: [
